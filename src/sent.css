@@ -1,0 +1,86 @@
+.sent-title { 
+    font-size: 50px; 
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sent { 
+    
+    display: block; 
+    text-align: left; 
+    width: 1000px; 
+    margin: 0 auto; 
+    text-align: justify; 
+    padding: 150px; 
+    font: 20px Helvetica, sans-serif; 
+    color: #333;  
+}
+.sent-img {
+    position: relative; 
+    top: 50px; 
+    left: 170px;
+}
+.sent-a { 
+    color: #dc8100; 
+    text-decoration: none; 
+}
+.sent-a:hover { 
+    color: #333; 
+    text-decoration: none; 
+}
+
+@media (max-width: 1920px) {
+    .sent {
+        width: 700px;
+    }
+  }
+
+
+  @media (max-width: 1487px) {
+    .sent {
+        width: 400px;
+        font: 15px Helvetica, sans-serif; 
+        padding: 75px; 
+    }
+    .sent-title {
+        font-size: 25px;
+        
+    }
+
+    .sent-img {
+        left: 70px;
+    }
+  }
+
+  @media (max-width: 1487px) {
+    .sent {
+        width: 400px;
+        font-size: 15px; 
+        padding: 75px; 
+    }
+    .sent-title {
+        font-size: 25px;
+        
+    }
+
+    .sent-img {
+        left: 70px;
+    }
+  }
+
+  @media (max-width: 500px){
+    @media (max-width: 1487px) {
+        .sent {
+            width: 360px;
+            font: 15px Helvetica, sans-serif; 
+            padding: 75px; 
+        }
+        .sent-title {
+            font-size: 25px;
+            
+        }
+    
+        .sent-img {
+            left: 50px;
+        }
+      }
+  }

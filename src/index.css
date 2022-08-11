@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+/*
+body { 
+  background-color: #2e4b8d;
+}
+*/
+.wrapper {
+  background-color: #ffffff;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+  background-color: #2e4b8d;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+}
+
+.header-text {
+  position: relative;
+  right: 25%;
+  color: #ffffff;
+  
+}
+
+.swiper {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+
+}
+
+.header-notice {
+  background-color: #f8d7da;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.header-notice-text {
+  color: red;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+.header-welcome {
+  width: 90%;
+  height: 170px;
+  margin: 0 auto;
+  background-color: #4c6cb1;
+  display: flex;
+  border-radius: 10px;
+}
+
+.header-welcome-text {
+  color: #fff;
+  font-size: 50px;
+  margin: auto;
+}
+
+.swiper-button-prev {
+  color: white !important;
+}
+
+.swiper-button-next {
+  color: white !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+.form-container {
+  background-color: #f8f9fa;;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-time label, input, select, textarea, small {
+  display: block;
+  
+}
+
+input, select, textarea {
+  padding: 10px;
+}
+
+.contact-label {
+  margin-top: 20px;
+}
+
+.contact-label input {
+  margin-bottom: 10px;
+}
+
+.form-info input, .form-info select {
+  margin-top: 10px;
+}
+
+.form-time, .form-contact, .form-info {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+}
+
+input, select {
+  
+  width: 100% !important;
+  height: 40px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+ 
+}
+
+select {
+  background-color: #ffffff;
+}
+
+small {
+  font-weight: bold;
+  color: rgb(0, 38, 255);
+}
+
+textarea {
+  width: 40%;
+  height: 150px;
+}
+
+.custom-file {
+  margin-top: 10px;
+}
+
+
+.submit-btn {
+  margin: 10px 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #2e4b8d;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.disable-submit-btn {
+  margin: 10px 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #8d2e2e;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  filter: blur(0.5px);
+}
+
+.clickable {
+  border-bottom: 1px solid blue;
+  color: blue;
+}
+
+.clickable:hover {
+  border-bottom: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+.mascot-container {
+  background-color: rgba(206, 212, 218, 0.753);
+  margin-bottom: 10px;
+  border-radius: 25px;
+  padding: 20px;
+  position: relative;
+}
+
+.exit {
+  position: absolute;
+  top: 10px;
+  left: 96%;
+  cursor: pointer;
+  font-weight: bold;
+  width: 40px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #4c6cb1;
+  color: white;
+}
+
+ input[type=file]::file-selector-button:hover, .submit-btn:hover, .exit:hover {
+  background-color: black;
+  transition: 0.9s;
+}
+.image-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  
+}
+
+.image {
+  display:flex;
+  justify-content: center;
+  position: relative;
+  margin: 5px;
+}
+
+.image .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+  text-align: center;
+}
+
+
+
+input[type=file]::file-selector-button {
+  margin-top: 5px;
+  padding: 6px 12px;
+  color: white;
+  background-color: #2e4b8d;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+}
+
+.mascot-name {
+  display: flex;
+  align-items: flex-end;
+}
+
+.form-error {
+  font-weight: bold;
+  color: red;
+}
+
+
+@media (max-width: 2980px) {
+  .image-container {
+    grid-template-columns: auto auto;
+    
+  }
+}
+
+
+
+@media (max-width: 1879px) {
+  .wrapper {
+      width: 95%;
+  }
+
+  .header-container h1 {
+    font-size: 25px;
+  }
+
+  .header-container p {
+    font-size: 15px;
+  }
+  .header-welcome {
+    height: 100px;
+  }
+
+  .header-text {
+    font-size: 13.2px;
+    right: 5%;
+  }
+  .form-comment {
+    width: 100%;
+  }
+}
+
+@media (max-width: 888px) {
+  .image-container {
+    grid-template-columns: auto;
+    
+  }
+
+  .image-container img {
+    height: 300px;
+  }
+}
+
+
+
+
+
+
